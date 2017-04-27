@@ -49,6 +49,12 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.10</version>
+		</dependency>
+		
 		<!-- 
 		<dependency>
 			<groupId>com.linecorp.bot</groupId>
