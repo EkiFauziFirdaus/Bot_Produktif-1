@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -28,10 +29,19 @@ public class Task_Sheduller {
 	
 	private static final String PATH = "src/main/resources/cron_adzan.properties";
 	
+	/*
+	 * Author : IF
+	 * Lakukan setiap pukul 00:01 untuk update jadwal adzan
+	 */
 	@Scheduled(cron = "${update}")
 	public void update_cron() {
 		try {			
 			PropertiesConfiguration prop = new PropertiesConfiguration(PATH);
+			
+			//ambil data jadwal shalat dari service adzan
+			//buat cron dari jadwal
+			//set ke property
+			//save
 			prop.setProperty("shubuh", "--cron dzuhur");
 			prop.setProperty("dzuhur", "--cron dzuhur");
 			prop.setProperty("maghrib", "--cron maghrib");
@@ -45,6 +55,12 @@ public class Task_Sheduller {
 		catch (Exception e){
 			System.out.println(e.getMessage());
 		}
+	}
+	
+	//convert from date to cron format...
+	//just get time
+	private String createCron(Date date){
+		return "";
 	}
 
 
