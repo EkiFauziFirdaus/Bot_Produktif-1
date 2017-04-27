@@ -48,6 +48,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- 
 		<dependency>
 			<groupId>com.linecorp.bot</groupId>
 			<artifactId>line-bot-spring-boot</artifactId>
@@ -68,6 +70,7 @@
 			<artifactId>line-bot-api-client</artifactId>
 			<version>1.7.0</version>
 		</dependency>
+		 -->
 	</dependencies>
 
 	<build>
