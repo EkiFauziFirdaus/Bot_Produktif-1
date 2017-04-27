@@ -22,6 +22,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * Author : IF
  * Date : Kamis, 27 April 2017. 16:40
  * Eksplorasi task scheduler di java. Calon class reminder adzan
+ * Untuk memahami format cron : https://crontab.guru/
  */
 @PropertySource(value= {"classpath:cron_adzan.properties"})
 @Component
