@@ -33,6 +33,7 @@ public class Task_Sheduller {
 	/*
 	 * Author : IF
 	 * Lakukan setiap pukul 00:01 untuk update jadwal adzan
+	 * Dependency Reference : http://crunchify.com/java-properties-files-how-to-update-config-properties-file-in-java/
 	 */
 	@Scheduled(cron = "${update}")
 	public void update_cron() {
